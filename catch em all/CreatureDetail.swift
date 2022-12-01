@@ -1,35 +1,29 @@
 //
-//  creatures.swift
+//  CreatureDetail.swift
 //  catch em all
 //
-//  Created by Matthew  Sustaita on 11/24/22.
+//  Created by Matthew  Sustaita on 11/30/22.
 //
 
 import Foundation
 
-class Creatures {
-    private struct Returned: Codable {
-        var count: Int
-        var next: String?
-        var results: [Creature]
-        
-    }
+class CreatureDetail {
     
-   
-    var count = 0
-    var urlString = "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=20"
-    var creatureArray: [Creature] = []
-    var isFetching = false
+    private struct Returned: Codable{
+        var height: Double
+        var weight: Double
+        var sprites: Sprites
+    }
+    private struct Sprites: Codable {
+        var front_default: String?
+    }
+    var height = 0.0
+    var weight = 0.0
+    var imageURL = ""
+    var urlString = ""
     
     func getData(completed: @escaping ()->()) {
         print("accessing URL")
-        //does not get data if already fetching data, avoids double fetching.
-        guard !isFetching else {
-            return
-        }
-        isFetching = true
-        
-        isFetching = true
         
         //create URL
         guard let url = URL(string: urlString) else {
@@ -47,13 +41,13 @@ class Creatures {
             do{
                 let returned = try JSONDecoder().decode(Returned.self, from: data!)
                 print("here is what was returned \(returned)")
-                self.creatureArray = self.creatureArray + returned.results
-                self.urlString = returned.next ?? ""
-                self.count = returned.count
+                self.height = returned.height
+                self.weight = returned.weight
+                self.imageURL = returned.sprites.front_default ?? ""
+              
             } catch {
                 print("thrown when tried to decode from Returned.self with data")
             }
-            self.isFetching = false
             completed()
         }
         

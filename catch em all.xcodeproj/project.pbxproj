@@ -17,6 +17,9 @@
 		A225CEC9292FBC0300461976 /* catch_em_allUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A225CEC8292FBC0300461976 /* catch_em_allUITests.swift */; };
 		A225CECB292FBC0300461976 /* catch_em_allUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A225CECA292FBC0300461976 /* catch_em_allUITestsLaunchTests.swift */; };
 		A225CED8292FC84300461976 /* Creatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A225CED7292FC84300461976 /* Creatures.swift */; };
+		A28ABFCF2938314500F569C9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28ABFCE2938314500F569C9 /* DetailViewController.swift */; };
+		A28ABFD12938345A00F569C9 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28ABFD02938345A00F569C9 /* Creature.swift */; };
+		A28ABFD32938363F00F569C9 /* CreatureDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28ABFD22938363F00F569C9 /* CreatureDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		A225CEC8292FBC0300461976 /* catch_em_allUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = catch_em_allUITests.swift; sourceTree = "<group>"; };
 		A225CECA292FBC0300461976 /* catch_em_allUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = catch_em_allUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A225CED7292FC84300461976 /* Creatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creatures.swift; sourceTree = "<group>"; };
+		A28ABFCE2938314500F569C9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A28ABFD02938345A00F569C9 /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
+		A28ABFD22938363F00F569C9 /* CreatureDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +110,10 @@
 				A225CEA7292FBBFD00461976 /* AppDelegate.swift */,
 				A225CEA9292FBBFD00461976 /* SceneDelegate.swift */,
 				A225CEAB292FBBFD00461976 /* ListViewController.swift */,
+				A28ABFCE2938314500F569C9 /* DetailViewController.swift */,
+				A28ABFD02938345A00F569C9 /* Creature.swift */,
 				A225CED7292FC84300461976 /* Creatures.swift */,
+				A28ABFD22938363F00F569C9 /* CreatureDetail.swift */,
 				A225CEAD292FBBFD00461976 /* Main.storyboard */,
 				A225CEB0292FBC0200461976 /* Assets.xcassets */,
 				A225CEB2292FBC0200461976 /* LaunchScreen.storyboard */,
@@ -263,6 +272,9 @@
 			files = (
 				A225CED8292FC84300461976 /* Creatures.swift in Sources */,
 				A225CEAC292FBBFD00461976 /* ListViewController.swift in Sources */,
+				A28ABFD12938345A00F569C9 /* Creature.swift in Sources */,
+				A28ABFCF2938314500F569C9 /* DetailViewController.swift in Sources */,
+				A28ABFD32938363F00F569C9 /* CreatureDetail.swift in Sources */,
 				A225CEA8292FBBFD00461976 /* AppDelegate.swift in Sources */,
 				A225CEAA292FBBFD00461976 /* SceneDelegate.swift in Sources */,
 			);
